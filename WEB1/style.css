@@ -1,0 +1,156 @@
+#contenedor-general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#barra-lateral{
+    color: white;
+    width: 250px;
+    background-color:#13678A;
+    height:800px; 
+    margin: 0;
+}
+#contenedor-barra-lateral{
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+#contenedor-foto {
+    text-align: center;
+}
+#imagen-principal {
+    width: 200px;
+    display: inline-block;
+    margin-top: 20px;
+}
+img{
+    overflow-clip-margin: content-box;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+.imagen-texto{
+    display: flex;
+    align-items: center;
+}
+.icono{
+    width: 25px;
+    margin-right: 20px;
+    background-color:#13678A;
+}
+.elemento-lista {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#contenido-general{
+    color:#13678A;
+    width: 370px;
+    height: 800px;
+    background-color:#DAFDBA;
+    margin: 0;
+}
+#contenedor-contenido-general{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+#contenedor-nombres{
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #13678A;
+    
+}
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+#nombres{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 40px;
+}
+#titulo{
+    text-align: right;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+.contenedor-titulo{
+    background-color:#13678A;
+    border-radius: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+}
+.icono-titulo{
+    width: 30px;
+    margin-top: 0px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+.titulo-seccion{
+    color:white;
+    margin-left: 10px;
+    font-weight: 600;
+}
+#letras{
+    text-align: left;
+    font-size: 18px;
+}
+#trabajo-institucion{
+    text-align: left;
+    font-size: 18px;
+}
+#estudios-institucion{
+    text-align: left;
+    font-size: 18px;
+}
+body {
+    display: flex;
+    margin: space-evenly;
+}
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+#contenedor-form{
+    background-color:aquamarine;
+    margin-right: 20px;
+}
+section{
+    margin: 20px;
+}
+.grupo-form{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.texto-encima{
+    display: block;
+}
+input {
+    height: 20px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+#input-perfil {
+    width: 450px;
+    height: 60px;
+}
+button {
+    height: 30px;
+    margin: 10px;
+    width: 200px;
+}

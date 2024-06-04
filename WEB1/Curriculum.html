@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<head>
+    <title>Curriculum</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div id="contenedor-form">
+        <section>
+            <h1>Formulario para crear CV</h1>
+            <div class="grupo-form">
+                <div class="form">
+                    <label class="texto-encima">Nombre:</label>
+                    <input type="text" id="input-nombre">
+                </div>
+                <div class="form">
+                    <label class="texto-encima">Apellido:</label>
+                    <input type="text" id="input-apellido">
+                </div>
+            </div>
+            <div class="grupo-form">
+                <div class="form">
+                    <label class="texto-encima">Título:</label>
+                    <input type="text" id="input-titulo">
+                </div>
+                <div class="form">
+                    <label class="texto-encima">Celular:</label>
+                    <input type="text" id="input-celular">
+                </div>
+            </div>
+            <div class="grupo-form">
+                <div class="form">
+                    <label class="texto-encima">Email:</label>
+                    <input type="text" id="input-email">
+                </div>
+                <div class="form">
+                    <label class="texto-encima">Ubicación:</label>
+                    <input type="text" id="input-ubicacion">
+                </div>
+            </div>
+            <div class="grupo-form">
+                <div class="form">
+                    <label class="texto-encima">Perfil:</label>
+                    <textarea id="input-perfil"></textarea>
+                </div>
+            </div>
+            <div class="grupo-form">
+                <div>
+                    <h3>Trabajos</h3>
+                    <div class="form">
+                        <label>Institucion:</label>
+                        <input type="text" id="input-trabajo-institucion">
+                    </div>
+                    <div class="form">
+                        <label>Trabajo 1:</label>
+                        <input type="text" id="input-trabajo-1">
+                    </div>
+                    <div class="form">
+                        <label>Trabajo 2:</label>
+                        <input type="text" id="input-trabajo-2">
+                    </div>
+                </div>
+                <div>
+                    <h3>Estudios</h3>
+                    <div class="form">
+                        <label>Institucion:</label>
+                        <input type="text" id="input-estudios-institucion">
+                    </div>
+                    <div class="form">
+                        <label>Estudios 1:</label>
+                        <input type="text" id="input-estudios-1">
+                    </div>
+                    <div class="form">
+                        <label>Estudios 2:</label>
+                        <input type="text" id="input-estudios-2">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3>Idiomas</h3>
+                <div class="form">
+                    <label>Idioma 1:</label>
+                    <input type="text" id="input-idioma-1">
+                </div>
+                <div class="form">
+                    <label>Idioma 2:</label>
+                    <input type="text" id="input-idioma-2">
+                </div>
+            </div>
+            <div id="button-container">
+                <button id="boton-generar-CV">Generar CV</button>
+                <button id="boton-generar-chiste">Generar chiste</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="contenedor-general">
+        <section id="barra-lateral">
+            <div id="contenedor-barra-lateral">
+                <div id="contenedor-foto">
+                    <img src="Fotos/perfil.png" id="imagen-principal">
+                </div>
+                <div>
+                    <h2>Perfil:</h2>
+                    <p id="perfil">Parrafo del perfil</p>
+                </div>
+                <div id="contacto">
+                    <h2>Contacto:</h2>
+                    <div class="imagen-texto">
+                        <img src="Fotos/telefono.png" class="icono">
+                        <p id="celular">+56 9 12345678</p>
+                    </div>
+                    <div class="imagen-texto">
+                        <img src="Fotos/mail.png" class="icono">
+                        <p id="email">correo@uc.cl</p>
+                    </div>
+                    <div class="imagen-texto">
+                        <img src="Fotos/ubicacion.png" class="icono">
+                        <p id="ubicacion">Ubicación</p>
+                    </div>
+                    <div id="contenedor-chiste">
+                        <h3>Chiste favorito:</h3>
+                        <p id="chiste"></p>
+                </div>
+            </div>
+        </section>
+        <section id="contenido-general">
+            <div id="contenedor-contenido-general">
+                <header id="contenedor-nombres">
+                    <div id="nombres">
+                        <p class="texto-titulo" id="nombre">Nombre</p>
+                        <p class="texto-titulo" id="apellido">Apellido</p>
+                    </div>
+                    <p id="titulo">Titulo</p>
+                </header>
+                <div class="contenedor-titulo">
+                    <img src="Fotos/experiencia.png" class="icono-titulo">
+                    <h3 class="titulo-seccion">Experiencia Laboral </h3>
+                </div>
+                <div>
+                    <h4 id="trabajo-institucion">Titulo trabajo</h4>
+                    <ul id="letras">
+                        <li id="trabajo-1">
+                            Trabajo-1
+                        </li>
+                        <li id="trabajo-2">
+                            Trabajo-2
+                        </li>
+                    </ul>
+                </div>
+                <div class="contenedor-titulo">
+                    <img src="Fotos/formacion.png" class="icono-titulo">
+                    <h3 class="titulo-seccion">Formación</h3>
+                </div>
+                <div>
+                    <h4 id="estudios-institucion">Universidad</h4>
+                    <ul id="letras">
+                        <li id="estudios-1">
+                            Estudio-1
+                        </li>
+                        <li id="estudios-2">
+                            Estudio-2
+                        </li>
+                    </ul>
+                </div>
+                <div class="contenedor-titulo">
+                    <img src="Fotos/idiomas.png" class="icono-titulo">
+                    <h3 class="titulo-seccion">Idiomas</h3>
+                </div>
+                <div>
+                    <ul id="letras">
+                        <li id="idioma-1">
+                            Idioma-1
+                        </li>
+                        <li id="idioma-2">
+                            Idioma-2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="main.js"></script>
