@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Experiencia Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <section>
+            <h1>Formulario para crear CV</h1>
+            <div class="form-multiple">
+                <div class="form-group">
+                    <label class="label-encima">Nombre:</label>
+                    <input type="text" id="input-nombre">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-encima">Apellido:</label>
+                    <input type="text" id="input-apellido">
+                </div>
+            </div>
+
+            <div class="form-multiple">
+                <div class="form-group">
+                    <label class="label-encima">Título:</label>
+                    <input type="text" id="input-titulo">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-encima">Celular:</label>
+                    <input type="text" id="input-celular">
+                </div>
+            </div>
+
+            <div class="form-multiple">
+                <div class="form-group">
+                    <label class="label-encima">Email:</label>
+                    <input type="text" id="input-email">
+                </div>
+
+                <div class="form-group">
+                    <label class="label-encima">Ubicación:</label>
+                    <input type="text" id="input-ubicacion">
+                </div>
+            </div>
+
+
+            <div class="form-multiple">
+                <div class="form-group">
+                    <label class="label-encima">Perfil:</label>
+                    <textarea id="input-perfil"></textarea>
+                </div>
+            </div>
+            
+            <div class="form-multiple">
+                <div>
+                    <h3>Trabajos</h3>
+                    <div class="form-group">
+                        <label>Institucion:</label>
+                        <input type="text" id="input-trabajo-institucion">
+                    </div>
+                    <div class="form-group">
+                        <label>Trabajo 1:</label>
+                        <input type="text" id="input-trabajo-1">
+                    </div>
+                    <div class="form-group">
+                        <label>Trabajo 2:</label>
+                        <input type="text" id="input-trabajo-2">
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Estudios</h3>
+                    <div class="form-group">
+                        <label>Institucion:</label>
+                        <input type="text" id="input-estudios-institucion">
+                    </div>
+                    <div class="form-group">
+                        <label>Estudios 1:</label>
+                        <input type="text" id="input-estudios-1">
+                    </div>
+                    <div class="form-group">
+                        <label>Estudios 2:</label>
+                        <input type="text" id="input-estudios-2">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Idiomas</h3>
+                <div class="form-group">
+                    <label>Idioma 1:</label>
+                    <input type="text" id="input-idioma-1">
+                </div>
+                <div class="form-group">
+                    <label>Idioma 2:</label>
+                    <input type="text" id="input-idioma-2">
+                </div>
+            </div>
+
+            <div id="button-container">
+                <button id="boton-generar-CV">Generar CV</button>
+                <button id="boton-generar-chiste">Obtener chiste</button>
+            </div>
+
+            <div id="fila-obtener-cvs">
+                <div>
+                    <h3>¿Qué CVs hay?</h3>
+                    <button id="boton-obtener-nombres">Obtener nombres</button>
+                </div>
+
+                <div>
+                    <h3>Obtener primer CV</h3>
+                    <button id="boton-primer-cv">Obtener CV</button>
+                </div>
+            </div>
+
+            <div>
+                <h3>Obtener CV</h3>
+            </div>
+
+            <div id="contenedor-boton-obtener-cv">
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" id="input-nombre-a-buscar">
+                </div>
+                <button id="boton-obtener-cv">Obtener CV</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="contenedor-general">
+        <section id="barra-lateral">
+            <div id="contenedor-barra-lateral">
+                <div id="contenedor-foto">
+                    <img src="fotos/pato.jpg" id="imagen-principal">
+                </div>
+                
+                
+                <div>
+                    <h2>Perfil:</h2>
+                    <p id="perfil">Pato historiador que ha ido viajando por el mundo para descubrir los más grandes secretos de la historia humana</p>    
+                </div>
+                
+                <div id="contacto">
+                    <h2>Contacto:</h2>
+                    <div class="img-text">
+                        <img src="fotos/telefono.png" class="icono">
+                        <p id="celular">+56 9 1234 5678</p>
+                    </div>  
+        
+                    <div class="img-text">
+                        <img src="fotos/mail.png" class="icono">
+                        <p id="email">pato_historiador@uc.cl</p>
+                    </div>
+        
+                    <div class="img-text">
+                        <img src="fotos/ubicacion.png" class="icono">
+                        <p id="ubicacion">Ubicación confidencial</p>
+                    </div>
+                    
+                    <div id="contenedor-chiste">
+                        <h3>Chiste favorito:</h3>
+                        <p id="chiste"></p>
+                    </div>
+                </div>   
+            </div>
+        </section>
+
+        <section id="contenido-general">
+            <div id="contenedor-contenido-general">            
+                <header id="contenedor-nombres">
+                    <div id="nombres">
+                        <p class="texto-titulo" id="nombre">Pato Explorador</p>
+                        <p class="texto-titulo" id="apellido">Muñoz</p>
+                    </div>
+                    <p id="titulo">Historiador Senior</p>
+                </header>
+
+                <div class="contenedor-titulo">
+                    <img src="fotos/experiencia.png" class="icono-titulo">
+                    <h3 class="titulo-seccion">Experiencia laboral</h3>
+                </div>
+
+                <div>
+                    <h4 id="trabajo_institucion">Universidad de Harvard</h4>
+                    <ul>
+                        <li id="trabajo_1">Profesor Historia III (1943-1960)</li>
+                        <li id="trabajo_2">Decano Facultad De Historia (1961-1965)</li>
+                    </ul>
+                </div>
+
+                <div class="contenedor-titulo">
+                    <img src="fotos/formacion.png" class="icono-titulo">
+                    <h3 class="titulo-seccion">Formación</h3>
+                </div>
+
+                <div>
+                    <h4 id="estudios_institucion">Universidad de Harvard</h4>
+                    <ul>
+                        <li id="estudios_1">Licenciatura en Ciencias Sociales (1930-1934)</li>
+                        <li id="estudios_2">Magíster en Historia Mundial (1935-1937)</li>
+                    </ul>
+                </div>
+
+                <div class="contenedor-titulo">
+                    <img src="fotos/idiomas.png" class="icono-titulo">
+                    <h3 class="titulo-seccion">Idiomas</h3>
+                </div>
+
+                <div>
+                    <ul>
+                        <li id="idioma_1">Inglés Nativo</li>
+                        <li id="idioma_2">Español Avanzado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
